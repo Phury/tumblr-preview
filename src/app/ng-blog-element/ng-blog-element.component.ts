@@ -9,11 +9,12 @@ import { Post, TumblrPosts } from '../post';
   selector: 'app-ng-blog-element',
   templateUrl: './ng-blog-element.component.html',
   styleUrls: ['./ng-blog-element.component.css'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  //encapsulation: ViewEncapsulation.ShadowDom
 })
 export class NgBlogElementComponent implements OnInit {
   posts: Observable<Post[]>;
 
+  displayTitle = true;
   tumblrApi = 'https://api.tumblr.com/v2/';
   apiKey = 'bKPCtADmsFdnw4Luf1FcSvmR0ENgPLQ4AEcpfyob5ClXUbo9j2';
   blogId = 'phulkor.tumblr.com';
