@@ -1,0 +1,5 @@
+span.date:before { content: "\00a0 "; }
+span.date {
+	font-size: 0.8em;
+	color: dimgray;
+}
